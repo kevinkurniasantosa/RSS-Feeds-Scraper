@@ -1,0 +1,26 @@
+
+Python v3.9
+=========================================================================================
+
+USER GUIDE
+
+Folder structure:
+- rss_scraper.py: a rss scraping python script that collects rss feed data based on specified criteria
+- run rss scraping.bat: a bat file to run the python script
+- rss_criteria.xlsx: an excel file that defines the specifications of the RSS feed e.g. the RSS source link, RSS news source name, etc.
+
+Steps:
+1. Define which RSS do you want to scrape in the excel file (rss_criteria.xlsx)
+2. Edit the bat file 
+    - Change line 2: cd <your_directory_path> | ex: cd C:\Users\kevin\Desktop\AMS\News Network\rss_scraping
+    - Change line 4: <python_directory> "<python_script_path>" | ex: C:\Python39\python.exe "C:/Users/kevin_santosa/Desktop/AMS/Script/News Network/rss_scraping/rss_scraper.py"
+    NOTE: to search what is our python path, simply type 'where python' in CMD
+3. Run the bat file (run rss scraping.bat) -> the result data will be generated in json file(s) based on the input in the excel file
+
+Alternative Steps - Using python directly:
+1. Run python script manually
+    - Change directory to where the python script is located
+    - Run python script using 'python rss_scraper.py'
+
+=========================================================================================
+
